@@ -1,5 +1,11 @@
 @ECHO OFF
 
+SET arg_1=%1
+ECHO Argument=[%arg_1%]
+IF /I "%arg_1%"=="keep" (
+    ECHO Repositories folder will not be deleted after archiving.
+)
+
 SET repos_folder=Repositories
 SET repo_list=List.txt
 SET git=git
@@ -31,4 +37,8 @@ SET tmp_archive_name=tmp.7z
 %zipper% t %tmp_archive_name%
 RENAME %tmp_archive_name% %archive_name%
 
-RMDIR /s /q %repos_folder%
+IF /I "%arg_1%"=="keep" (
+    ECHO Repositories folder was not deleted.
+) ELSE (
+	RMDIR /s /q %repos_folder%
+)
