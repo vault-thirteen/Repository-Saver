@@ -1,4 +1,8 @@
+:: Repository Saver Script
+:: Version 0.4.0.
+
 @ECHO OFF
+ECHO Repository Saver Script, ver. 0.4.0.
 
 SET arg_1=%1
 ECHO Argument=[%arg_1%]
@@ -30,15 +34,19 @@ FOR /F "usebackq tokens=1,2 delims==" %%i IN (`wmic os get LocalDateTime /VALUE 
 SET ldt=%ldt:~0,4%-%ldt:~4,2%-%ldt:~6,2%_%ldt:~8,2%-%ldt:~10,2%
 SET time_text=%ldt%
 
-:: Remove '.git' folders.
-CD %repos_folder%
-FOR /f "tokens=*" %%F IN ('DIR /AD /B') DO (
-	ECHO %%F
-	CD %%F
-	RMDIR /S /Q .git
-	CD ..
+IF /I "%arg_1%"=="keep" (
+    ECHO '.git' folders were not deleted.
+) ELSE (
+	:: Remove '.git' folders.
+    CD %repos_folder%
+    FOR /f "tokens=*" %%F IN ('DIR /AD /B') DO (
+    	ECHO %%F
+    	CD %%F
+    	RMDIR /S /Q .git
+    	CD ..
+    )
+    CD ..
 )
-CD ..
 
 :: Compress all the folders.
 SET archive_name=%repos_folder%_%time_text%.7z
