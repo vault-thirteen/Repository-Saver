@@ -1,8 +1,8 @@
 :: Repository Saver Script
-:: Version 0.4.0.
+:: Version 0.6.0.
 
 @ECHO OFF
-ECHO Repository Saver Script, ver. 0.4.0.
+ECHO Repository Saver Script, ver. 0.6.0.
 
 SET arg_1=%1
 ECHO Argument=[%arg_1%]
