@@ -12,7 +12,6 @@ https://github.com/vault-thirteen/junk.git
 https://github.com/vault-thirteen/MakeVideoSnapshot.git
 https://github.com/vault-thirteen/memory-usage-controller.git
 https://github.com/vault-thirteen/MIME.git
-https://github.com/vault-thirteen/proxy.git
 https://github.com/vault-thirteen/Repository-Saver.git
 https://github.com/vault-thirteen/SBM.git
 https://github.com/vault-thirteen/SFHS.git
