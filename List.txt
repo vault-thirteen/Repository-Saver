@@ -16,6 +16,7 @@ https://github.com/vault-thirteen/Repository-Saver.git
 https://github.com/vault-thirteen/SBM.git
 https://github.com/vault-thirteen/SFHS.git
 https://github.com/vault-thirteen/SFRODB.git
+https://github.com/vault-thirteen/SPA.git
 https://github.com/vault-thirteen/SQL.git
 https://github.com/vault-thirteen/tester.git
 https://github.com/vault-thirteen/Versioneer.git
