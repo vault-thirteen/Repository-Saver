@@ -7,7 +7,6 @@ https://github.com/vault-thirteen/Hasher.git
 https://github.com/vault-thirteen/header.git
 https://github.com/vault-thirteen/HTML-DOM.git
 https://github.com/vault-thirteen/IPARC.git
-https://github.com/vault-thirteen/JSON-CRC32-Hasher.git
 https://github.com/vault-thirteen/junk.git
 https://github.com/vault-thirteen/MakeVideoSnapshot.git
 https://github.com/vault-thirteen/memory-usage-controller.git
